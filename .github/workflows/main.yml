@@ -79,6 +79,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        unityVersion:
+          - 2019.4.12f1
         targetPlatform:
           # - StandaloneOSX
           # - StandaloneWindows
