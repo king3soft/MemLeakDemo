@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Text;
-
+namespace KBuilder.Reporting
+{
 public static class ProcessExtensions
 {
   // Execute an application or binary with given arguments
@@ -39,4 +40,5 @@ public static class ProcessExtensions
 
     return process.ExitCode;
   }
+}
 }
