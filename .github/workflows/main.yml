@@ -109,10 +109,10 @@ jobs:
           targetPlatform: ${{ matrix.targetPlatform }}
           # buildMethod: AssetBundles.BuildScript.BuildStandalonePlayer      
 
-      # - uses: actions/upload-artifact@v2
-      #   with:
-      #     name: Build-${{ matrix.targetPlatform }}
-      #     path: build
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Build-${{ matrix.targetPlatform }}
+          path: build
 
       - uses: softprops/action-gh-release@v1
         env:
