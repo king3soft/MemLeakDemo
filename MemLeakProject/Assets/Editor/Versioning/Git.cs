@@ -106,10 +106,11 @@ namespace KBuilder.Versioning
       using (var process = new System.Diagnostics.Process()) {
         string workingDirectory = Application.dataPath;
 
-        int exitCode = process.Run(application, arguments, workingDirectory, out string output, out string errors);
-        if (exitCode != 0) { throw new GitException(exitCode, errors); }
+        //int exitCode = process.Run(application, arguments, workingDirectory, out string output, out string errors);
+        //if (exitCode != 0) { throw new GitException(exitCode, errors); }
 
-        return output;
+        //return output;
+        return "";
       }
     }
   }
