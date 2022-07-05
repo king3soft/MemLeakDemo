@@ -84,7 +84,7 @@ jobs:
         targetPlatform:
           # - StandaloneOSX
           # - StandaloneWindows
-          - StandaloneWindows64
+          # - StandaloneWindows64
           # - StandaloneLinux64
           # - iOS
           - Android
@@ -103,7 +103,7 @@ jobs:
             Library-      
 
       # https://github.com/game-ci/unity-builder/releases/
-      - uses: game-ci/unity-builder@v2.0-alpha-6
+      - uses: game-ci/unity-builder@v2.0.4
         with:
           projectPath: ${{ env.PROJECT_PATH }}
           targetPlatform: ${{ matrix.targetPlatform }}
