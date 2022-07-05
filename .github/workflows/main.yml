@@ -80,7 +80,7 @@ jobs:
       fail-fast: false
       matrix:
         unityVersion:
-          - 2020.1.4f1
+          - 2019.4.23f1
         targetPlatform:
           # - StandaloneOSX
           # - StandaloneWindows
@@ -118,5 +118,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: build/Android/*.apk
+          files: |
+            build/Android/*.apk
+            build/Android/*.zip
           prerelease: ${{ contains(github.ref, '-') }}
