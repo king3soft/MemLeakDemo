@@ -14,6 +14,6 @@ public class memLeakDemo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        m_HoldList.Add(new int[1024]);
+        //m_HoldList.Add(new int[1024]);
     }
 }
